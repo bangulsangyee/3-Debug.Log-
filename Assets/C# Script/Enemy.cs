@@ -7,14 +7,14 @@ public class Enemy : MonoBehaviour
     //private GameObject box;
     void Start()
     {
-        gameObject.transform.position = new Vector3(12.81f, -0.76f, 0f);
+        gameObject.transform.position = new Vector3(13f, 0f, 0f);
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        if(gameObject.transform.position.x < -10f)
+        if(gameObject.transform.position.x < -20f)
         {
             Destroy(gameObject);
         }

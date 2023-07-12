@@ -6,7 +6,7 @@ public class Player : MonoBehaviour
 {
     public Vector2 inputVec;
     public float playerSpeed = 5.0f;
-    public float jumpPower = 5.0f;
+    public float jumpPower = 10.0f;
     public int Jump;
 
     [SerializeField]
