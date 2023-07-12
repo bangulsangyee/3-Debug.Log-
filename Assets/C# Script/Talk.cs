@@ -131,7 +131,7 @@ public class Talk : MonoBehaviour
             NameText.text = "신사 할아버지";
             Character[0].color = new Color32(150, 150, 150, 150);
             Character[1].color = new Color32(255, 255, 255, 255);
-            fullText = "마르코야. 내 말 잘들어라. 이편지를 가지고 라 보카로 가거라.\n 두 시간쯤 가면 된단다. 이 편지에 적힌 신사를 찾아 가거라. 그 사람이 도와줄거야.";
+            fullText = "마르코야. 내 말 잘들어라. 이편지를 가지고 코르도바 가거라.\n 두 시간쯤 가면 된단다. 이 편지에 적힌 신사를 찾아 가거라. 그 사람이 도와줄거야.";
             StartCoroutine(ShowText());
         }
 

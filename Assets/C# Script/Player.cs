@@ -10,9 +10,9 @@ public class Player : MonoBehaviour
     public int Jump;
 
     [SerializeField]
-    private GameObject player;
+    public GameObject player;
 
-    Rigidbody2D rigid;
+    public Rigidbody2D rigid;
 
     void Start()
     {
@@ -72,6 +72,7 @@ public class Player : MonoBehaviour
         {
             Jump = 0; // 점프 중이 아님
         }
+
     }
 
 }
