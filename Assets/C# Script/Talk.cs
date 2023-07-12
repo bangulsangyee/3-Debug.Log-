@@ -16,6 +16,9 @@ public class Talk : MonoBehaviour
     public int ClickTime; // 클릭횟수
     public bool doClick; // 클릭이 가능한가?
 
+    [SerializeField]
+    public GameObject canvas; //나의 캔버스를 받아서 끝났을 때 꺼지게 하기위함.
+
     //---------------------------------------------------
     [Serializable] // 직렬화(인스펙터 창에 보이게 하기 위함)
     public struct SelectionTextButton // 선택지 버튼, 텍스트
@@ -128,7 +131,7 @@ public class Talk : MonoBehaviour
             NameText.text = "신사 할아버지";
             Character[0].color = new Color32(150, 150, 150, 150);
             Character[1].color = new Color32(255, 255, 255, 255);
-            fullText = "마르코야. 내 말 잘들어라. 이편지를 가지고 라 보카로 가거라. 두 시간쯤 가면 된단다. 이 편지에 적힌 신사를 찾아 가거라. 그 사람이 도와줄거야.";
+            fullText = "마르코야. 내 말 잘들어라. 이편지를 가지고 라 보카로 가거라.\n 두 시간쯤 가면 된단다. 이 편지에 적힌 신사를 찾아 가거라. 그 사람이 도와줄거야.";
             StartCoroutine(ShowText());
         }
 
@@ -137,8 +140,9 @@ public class Talk : MonoBehaviour
             NameText.text = "신사 할아버지";
             Character[0].color = new Color32(150, 150, 150, 150);
             Character[1].color = new Color32(255, 255, 255, 255);
-            fullText = "가거라. 용기 잃지 말고. 어디로 가든 고향 사람들을 만날 수 있을 테니 넌 혼자가 아니란다. 잘가라!";
+            fullText = "가거라. 용기 잃지 말고. 어디로 가든 고향 사람들을 만날 수 있을 테니\n 넌 혼자가 아니란다. 잘가라!";
             StartCoroutine(ShowText());
+            canvas.SetActive(false);
         }
     }
 
